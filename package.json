@@ -1,0 +1,13 @@
+{
+    "name": "entomo-documentdb-lambda",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "deploy": "zip -r package.zip . -x package.zip && aws lambda update-function-code --function-name mongodb-connector --zip-file fileb://package.zip --profile "
+    },
+    "dependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "mongoose": "^7.0.3"
+    }
+}
